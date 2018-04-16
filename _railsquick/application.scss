@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+
+:root {
+    --color-font-main: #dddddd;
+    --color-bg-main: #333333;
+    --color-bg-alt: #555555;
+    --color-link-main: #1B998B;
+    --color-highlight-main: #C33149;
+}
+
+
+
+body {
+    
+    background-color: var(--color-bg-main);
+    color: var(--color-font-main);
+}
+
+a:link {
+    color: var(--color-link-main);
+}
+
+a:visited {
+    color: var(--color-link-main);
+}
+
+a:hover {
+    color: var(--color-highlight-main);
+}
+
+textarea, input, select {
+    box-shadow: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    font-size: 1em;
+
+    background-color: var(--color-bg-alt);
+    color: var(--color-font-main);
+}
+
+input[type="submit"] {
+    
+}
