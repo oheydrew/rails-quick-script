@@ -1,7 +1,7 @@
 # Rails-Quick Script
 Just a script I wrote for myself during my boot-camp course. It adds a number of reguarly-used gems to a rails project, and saves me copying a heap of the same code over and over.
 
-## ** **For New Projects Only! This Script Will Overwrite Important Rails Files** **
+## ** **For Creating new rails projects only! NOT for existing projects! This Script Overwrites Important Rails Files** **
 
 **This script isn't really for public use, it's mostly for my own use.** It will overwrite files, and is **not** for use with new/established Rails projects! It's a quick, dirty, installation script. If you find it helpful, have at it.
 
@@ -24,14 +24,15 @@ It also copies over important configuration files, runs Rails Rspec:Install, and
 
 If that's all good, and you're starting fresh:
 
-Start with a ```rails new```:
+Don't stare with a ```rails new```: The script will do this for you with the right arguments. Instead, create a new project folder, and CD into it.
 
 ```bash 
-rails new project_name --skip-bundle --skip-test
+mkdir project_name
+cd project_name
 ```
 ...to start with a nice clean install.
 
-Next, ```cd``` into the project directory and clone the repo into the root:
+Next, from the project directory, clone this repo:  
 
 ```bash
 ~project_name/ $ git clone git@github.com:oheydrew/rails-quick-script.git
@@ -49,4 +50,4 @@ Next, ```cd``` into the project directory and clone the repo into the root:
 chmod +x rails-quick.sh
 ```
 
-The script should take care of the rest!
+The script will prompt you to confirm, then will perform ' ```rails new .``` ' (new rails project in current directory), and do the necessary setup.
