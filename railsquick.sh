@@ -18,9 +18,17 @@ then
     rails generate rspec:install
     echo 'RAILSQUICK: Rails Devise:Install ----------------------------------------'
     rails generate devise:install
+    echo 'RAILSQUICK: Rails Pundit:Install ----------------------------------------'
+    rails generate pundit:install
 
+    echo 'RAILSQUICK: .gitignore: cp .gitignore -----------------------------------'
+    cp -rf _railsquick/.gitignore .gitignore
+    echo 'RAILSQUICK: .env.development: cp .env.development -----------------------'
+    cp -rf _railsquick/.env.development .env.development
     echo 'RAILSQUICK: rspec/requires: cp spec/rails_helper.rb ---------------------'
     cp -rf _railsquick/rails_helper.rb spec/rails_helper.rb
+    echo 'RAILSQUICK: pundit/devise/setup: cp controllers/application_controller.rb'
+    cp -rf _railsquick/application_controller.rb app/controllers/application_controller.rb
     echo 'RAILSQUICK: factory-bot: mkdir /spec/support ----------------------------'
     mkdir spec/support/
     echo 'RAILSQUICK: factory-bot: cp spec/support/factory_bot.rb -----------------'

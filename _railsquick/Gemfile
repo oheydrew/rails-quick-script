@@ -18,6 +18,8 @@ gem 'jquery-rails'
 gem 'hirb'
 # Use devise for user authentication 
 gem 'devise', '~> 4.4', '>= 4.4.3'
+# Use pundit for user authorization
+gem 'pundit'
 
 # ------------------------------------- RAILS DEFAULT
 
@@ -59,6 +61,8 @@ group :development, :test do
   gem 'faker'
   # cleans database between tests
   gem 'database_cleaner', '~> 1.5'
+  # Use dotenv-rails for environment varibles
+  gem 'dotenv-rails'
 
 # ------------------------------------- RAILS DEFAULT
 
