@@ -40,8 +40,10 @@ then
     echo 'RAILSQUICK: bootstrap: rm app/assets/stylesheets/application.css --------'
     rm -rf app/assets/stylesheets/application.css
     echo 'RAILSQUICK: All done! Deleting Railsquick files... ----------------------'
+    rm -rf .git/
     rm -rf _railsquick/
     rm -rf railsquick.sh
+
 else
     echo 'NOT CONFIRMED: Exiting...'
 fi
